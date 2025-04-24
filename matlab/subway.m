@@ -1,0 +1,9 @@
+[s,fs]=audioread('sp01.wav');
+[v1,fs]=audioread('subway.wav');
+s1=resample(s,1,1);
+v=v1*2.8;
+v = v(1:length(s1));
+orig=s1+v(1:16060); 
+player = audioplayer(v, fs);
+player1 = audioplayer(s, fs);
+player2 = audioplayer(orig, fs);
