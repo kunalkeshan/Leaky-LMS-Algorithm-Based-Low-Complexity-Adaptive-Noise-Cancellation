@@ -43,6 +43,14 @@ Noise in biomedical and speech signals can significantly affect diagnostic accur
     %     desiredSNR  – desired SNR in dB (numeric)
     %     method      – one of {'lms','llms','nllms','rllms'}
    processSignal('pcg', 'normal', 0, 'nllms');
+
+   % Inputs:
+    %     Clean Signal
+    %     Noise Signal
+    %     Clean + Noise Signal
+    %     Ouput Signal
+    %     Show First 6000 Samples - Boolean - true or false 
+   makeplot(s, v, orig, e(1,:), true);
    ```
 
 4. Output results (denoised signals, SNR, MSE, correlation coefficients) will be shown in the command window for each stage.
