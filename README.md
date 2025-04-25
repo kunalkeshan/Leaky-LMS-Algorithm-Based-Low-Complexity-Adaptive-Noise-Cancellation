@@ -2,8 +2,6 @@
 
 This project implements a multistage Leaky Least Mean Square (LLMS) adaptive filtering technique for noise cancellation in biomedical and speech signals. The primary motivation is to improve the accuracy of signal-based diagnosis (e.g., Parkinson's disease detection) by effectively removing environmental and instrumental noise from speech and phonocardiogram (PCG) recordings. All signal processing and output generation were performed using MATLAB.
 
----
-
 ## Table of Contents
 
 - Overview
@@ -14,13 +12,9 @@ This project implements a multistage Leaky Least Mean Square (LLMS) adaptive fil
 - Results
 - References
 
----
-
 ## Overview
 
 Noise in biomedical and speech signals can significantly affect diagnostic accuracy, especially in applications such as early detection of neurodegenerative diseases. The LLMS algorithm offers a low-complexity, stable, and effective solution for adaptive noise cancellation. This project demonstrates the application of a multistage LLMS filter to denoise both PCG and speech signals, enhancing their suitability for downstream analysis and diagnosis.
-
----
 
 ## Features
 
@@ -29,16 +23,12 @@ Noise in biomedical and speech signals can significantly affect diagnostic accur
 - **MATLAB-based implementation** for easy integration and reproducibility
 - Evaluation on real-world, noisy datasets
 
----
-
 ## Installation & Requirements
 
 - **MATLAB** (R2018b or later recommended)
 - **MATLAB Online** works for this project too.
 - Signal Processing Toolbox (for advanced filtering and analysis)
 - Download the datasets as described below
-
----
 
 ## Usage
 
@@ -57,8 +47,6 @@ Noise in biomedical and speech signals can significantly affect diagnostic accur
 
 4. Output results (denoised signals, SNR, MSE, correlation coefficients) will be shown in the command window for each stage.
 
----
-
 ## Datasets Used
 
 ### 1. PhysioNet/CinC Challenge 2016 Phonocardiogram (PCG) Dataset
@@ -73,8 +61,6 @@ Noise in biomedical and speech signals can significantly affect diagnostic accur
 - **Description:** Consists of 30 IEEE sentences spoken by three male and three female speakers, corrupted by eight types of real-world noise (e.g., babble, car, street, restaurant) at SNRs of 0, 5, 10, and 15 dB. The sentences are phonetically balanced and were originally sampled at 25 kHz, downsampled to 8 kHz. This corpus is widely used for benchmarking speech enhancement algorithms[^3].
 - **Use in Project:** Used to test the LLMS filter's performance on speech signals, simulating real-world noisy environments encountered in clinical and telehealth scenarios.
 
----
-
 ## Results
 
 The LLMS filter demonstrated effective noise reduction on both PCG and speech datasets. Key findings include:
@@ -85,22 +71,16 @@ The LLMS filter demonstrated effective noise reduction on both PCG and speech da
 
 Detailed quantitative results, including SNR, MSE, and correlation coefficients for various noise levels and filter stages, are provided in the `/reports` directory and in the project paper.
 
----
-
 ## References
 
 - PhysioNet/CinC Challenge 2016 PCG Dataset[^2]
 - NOIZEUS Speech Corpus[^3]
 - Project Paper: "Leaky LMS algorithm based low complexity Adaptive Noise Cancellation" (see attached PDF)
 
----
-
 ## Acknowledgments
 
 - PhysioNet and the contributors of the CinC Challenge 2016 for the PCG dataset
 - Dr. Philipos Loizou and collaborators for the NOIZEUS speech corpus
-
----
 
 ## Contact
 
