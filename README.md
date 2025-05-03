@@ -11,6 +11,7 @@ This project implements a multistage Leaky Least Mean Square (LLMS) adaptive fil
 - Datasets Used
 - Results
 - References
+- Demo Video
 
 ## Overview
 
@@ -84,6 +85,10 @@ Detailed quantitative results, including SNR, MSE, and correlation coefficients 
 - PhysioNet/CinC Challenge 2016 PCG Dataset[^2]
 - NOIZEUS Speech Corpus[^3]
 - Project Paper: "Leaky LMS algorithm based low complexity Adaptive Noise Cancellation" (see attached PDF)
+
+## Demo Video
+
+[![Leaky LMS Algorithm-Based Low Complexity Adaptive Noise Cancellation Demo Video](https://img.youtube.com/vi/-UfivdQKU6s/0.jpg)](https://www.youtube.com/watch?v=-UfivdQKU6s)
 
 ## Acknowledgments
 
